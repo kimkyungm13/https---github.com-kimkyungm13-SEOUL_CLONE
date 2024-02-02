@@ -1,0 +1,27 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+header .logo a,
+header .header-bottom .search-group .btn-search,
+.section04 .board a.more,
+.section06 .all-link::after,
+.section07 .now-group .now-seoul-sns .all-link::after,
+.section08 .popSwiper .control-group .btn-wrap [class*="button-"],
+footer .footer-bottom .dasan {
+    background: url(../images/img-sp-common.png);
+    background-repeat: no-repeat;
+}
+
+
+
+.icon_news,
+.icon_citizen {
+    background: url(../images/icon_main.png);
+    background-repeat: no-repeat;
+}
