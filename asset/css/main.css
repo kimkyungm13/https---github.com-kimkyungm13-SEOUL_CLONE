@@ -135,7 +135,7 @@ h2 {
 .sc-visual .slide-control .control-wrap [class*="btn-"] {
     width: 18px;
     height: 18px;
-    background: url(/asset/images/img-sp-common2019.png) no-repeat;
+    background: url(../images/img-sp-common2019.png) no-repeat;
 }
 
 .sc-visual .slide-control .control-wrap .btn-prev {
