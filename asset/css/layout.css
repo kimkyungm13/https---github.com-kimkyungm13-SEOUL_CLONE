@@ -1,0 +1,248 @@
+@import url(./reset.css);
+@import url(./common.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    width: 1152px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .header-top {
+    display: flex;
+    width: 100%;
+    gap: 70px;
+}
+
+header .logo {
+    margin-top: 7px;
+}
+
+header .logo a {
+    width: 105px;
+    height: 27px;
+    display: block;
+    background-position: -5px -165px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+header .gnb {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .gnb a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+header .util {
+    display: flex;
+    gap: 20px;
+}
+
+header .util a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .header-bottom {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 38px;
+}
+
+header .header-bottom .lang_site {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .header-bottom .slogan {
+    width: 133px;
+    height: 51px;
+    background: url(../images/img-slogan.png) no-repeat;
+}
+
+header .header-bottom .search-group {
+    position: absolute;
+    margin-left: 250px;
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+}
+
+header .header-bottom .search-group form fieldset {
+    display: flex;
+    align-items: center;
+}
+
+header .header-bottom .search-group input {
+    width: 100%;
+    padding: 10px;
+}
+
+header .header-bottom .search-group .btn-keyboard {
+    width: 33px;
+    height: 16px;
+    background: url(../images/img-keyboard.png) no-repeat;
+    background-size: 100%;
+}
+
+header .header-bottom .search-group .btn-search {
+    width: 36px;
+    height: 36px;
+    background-position: -32px -97px;
+    margin: 0 7px
+}
+
+header .header-bottom .lang_site select {
+    height: 21px;
+    outline: 1px solid #afcfea;
+    font-size: 12px;
+    color: #1E6CB3;
+
+}
+
+header .header-bottom .lang_site input[type="button"] {
+    color: #fff;
+    background-color: #1E6CB3;
+    font-size: 11px;
+    display: flex;
+    height: 23px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .header-bottom .weather-group {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+header .header-bottom .weather-group .desc-area {
+    display: flex;
+    flex-direction: column;
+}
+
+header .header-bottom .weather-group .desc-area .temp {
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+header .header-bottom .weather-group .dust-wrap {
+    font-size: 13px;
+    letter-spacing: -1.5px;
+}
+
+header .header-bottom .weather-group .dust-wrap em {
+    color: #f10000
+}
+
+/*footer*/
+footer {}
+
+footer .footer-top ul {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+footer .footer-top ul li {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .footer-top ul li+li:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #dcdcdc;
+}
+
+footer .footer-top ul li a {
+    font-size: 12px;
+    color: #636363;
+}
+
+footer .footer-top ul li.kc a {
+    width: 114px;
+    height: 24px;
+    background: url(../images/ico-sns-pc.png) no-repeat;
+    background-position: 0 -30px;
+}
+
+footer .footer-top ul li.kc:before {
+    display: none;
+}
+
+footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer .footer-bottom .address-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+footer .footer-bottom .dasan {
+    width: 108px;
+    height: 45px;
+    background-position: -180px 0;
+}
+
+footer .footer-bottom .address li {
+    padding-bottom: 2px;
+    font-size: 12px;
+    color: #636363;
+}
+
+
+footer .btn-top {
+    position: fixed;
+    bottom: -100px;
+    /* bottom: 100px; */
+    left: 50%;
+    margin-left: 600px;
+    /* right: 7%; */
+    /* right 지정?? */
+    width: 34px;
+    height: 34px;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+footer .btn-top.show {
+    opacity: 1;
+    bottom: 98px;
+}

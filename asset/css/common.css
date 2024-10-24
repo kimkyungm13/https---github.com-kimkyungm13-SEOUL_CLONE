@@ -1,0 +1,42 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+header .logo a,
+header .header-bottom .search-group .btn-search,
+.section04 .board a.link-all,
+.section06 .all-link::after,
+.section07 .sc-sns .all-link::after,
+.section08 .popSwiper .control-group .btn-wrap [class*="btn-"],
+footer .footer-bottom .dasan {
+    background: url(../images/img-sp-common.png);
+    background-repeat: no-repeat;
+}
+
+.sc-visual .title button::before {
+    background: url(../images/icon_main.png);
+    background-repeat: no-repeat;
+}
+
+.skip-nav {
+    position: absolute;
+}
+
+.skip-nav a {
+    position: absolute;
+    white-space: nowrap;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    transform: translateY(-100%);
+}
+
+.skip-nav a:focus,
+.skip-nav a:active {
+    transform: translateY(0);
+}
